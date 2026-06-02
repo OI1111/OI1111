@@ -590,9 +590,11 @@ def build_sb():
 
     add_body(doc, 'MENU COMPOSITION — CATEGORY COVERAGE', bold=True)
     add_body(doc,
-        'A well-built cocktail menu covers all major drinking occasions. If a category is missing, the bar loses '
-        'an order every time a guest at that table wants that style of drink. This is not about variety for its '
-        'own sake — it is about not losing a sale.')
+        'A well-built cocktail menu covers the drinking occasions that are relevant to its concept. '
+        'The categories below are a working framework — the bar concept determines which apply, which to '
+        'combine, and whether additional categories belong. A beach bar needs Frozen. A supper club needs '
+        'Hot cocktails. A wine-forward venue may not need Spirit-Forward at all. The framework is the starting '
+        'point. The concept is the edit.')
 
     add_two_col_table(doc,
         ['CATEGORY', 'EXAMPLE BUILDS', 'GUEST IT SERVES'],
@@ -603,14 +605,16 @@ def build_sb():
             ['Sweet / Indulgent', 'Espresso Martini, Mudslide, Chocolate Martini', 'After-dinner, dessert drinkers'],
             ['Long / Refreshing', 'Moscow Mule, Mojito, Tom Collins', 'Casual, warm-weather, session drinkers'],
             ['Zero-Proof', 'N/A Sour, Shrub Mocktail, Sparkling Juice', 'Non-drinking guests — every table'],
+            ['Hot / Specialty Coffee', 'Irish Coffee, Spanish Coffee, Spiced Mocha', 'Evening, cold weather, after dinner'],
+            ['Frozen / Blended', 'Frozen Margarita, Piña Colada', 'Resort, beach, high-volume warm-weather venues'],
+            ['Low ABV / Session', 'Aperitivo Spritz, Beer cocktail, Wine Spritz', 'Guests drinking across a long evening'],
         ]
     )
 
     add_body(doc,
-        'A menu missing the zero-proof category loses every table with one non-drinking guest. A menu without '
-        'a spirit-forward option loses the guest who wants something serious. Missing sweet or sparkling loses '
-        'the after-dinner and celebration orders. Category coverage is not about pleasing everyone — it is about '
-        'not writing off an entire type of sale.')
+        'Not every concept needs every category. A category missing from a menu should be a deliberate decision — '
+        'not an oversight. When a guest at a table cannot find the style of drink they want, that table\'s total '
+        'spend drops. Knowing which categories your concept requires, and why, is part of the design work.')
 
     add_body(doc, 'THE MODIFICATION PRINCIPLE — THREE TOOLS, ONE LESSON', bold=True)
     add_body(doc,
@@ -643,7 +647,7 @@ def build_sb():
         'as a $14 drink. The modifications are the entire price difference.', bg='FFF8DC')
 
     add_reflect(doc, [
-        'A cocktail menu has no zero-proof section and no sparkling category. Name two guest types who leave without ordering and explain what this means for that table\'s total spend.',
+        'A craft cocktail bar has no zero-proof section and no sparkling category. Are these gaps a problem for this concept? Name the guest types affected and explain what it means for that table\'s total spend.',
         'You are asked to elevate a $15 Cosmopolitan to a $19 cocktail without adding more than $0.50 in ingredient cost. Describe two modifications you would make and what each one contributes to the guest experience.',
     ])
 
@@ -1348,13 +1352,17 @@ def build_tm():
 
     add_heading(doc, 'WHAT TO SAY', level=3)
     add_body(doc,
-        'Menu composition: a well-built cocktail menu covers all major drinking occasions. Minimum one entry per '
-        'category. If a category is missing, the bar loses a sale every time a guest at that table wants that '
-        'style of drink. Not an inconvenience — a lost revenue line.')
+        'Menu composition: a well-built cocktail menu covers the drinking occasions relevant to its concept. '
+        'The categories in the SB are a working framework — not a fixed list. The bar concept determines which '
+        'apply, which to combine, and whether additional categories belong. A beach bar needs Frozen. '
+        'A supper club needs Hot cocktails. A wine-forward venue may not need Spirit-Forward. '
+        'The framework is the starting point. The concept is the edit.')
     add_body(doc,
-        'The six categories: Sour (shaken, citrus-forward), Spirit-Forward (stirred), Sparkling/Light, '
-        'Sweet/Indulgent, Long/Refreshing, Zero-Proof. A menu without zero-proof loses every table with one '
-        'non-drinker. A menu without spirit-forward loses the serious drinker. Missing categories are missing sales.')
+        'The core categories: Sour, Spirit-Forward, Sparkling, Sweet, Long, Zero-Proof. Extended categories '
+        'depending on concept: Hot/Specialty Coffee, Frozen/Blended, Low ABV/Session. A category absent from '
+        'a menu should be a deliberate decision — not an oversight. When a guest cannot find the style they want, '
+        'that table\'s spend drops. Ask the student: which categories does your concept require, and which can you '
+        'confidently leave out?')
     add_body(doc,
         'The modification principle: three types of modification cost under $0.50 each and justify a $3–5 price '
         'increase. Dehydrated citrus (visual premium, weeks of shelf life), aromatic spray or expressed peel '
@@ -1401,9 +1409,10 @@ def build_tm():
 
     add_body(doc, 'DISCUSSION PROMPT', bold=True)
     add_body(doc,
-        'Ask: if you were opening your own bar tomorrow and you could only have six cocktails on the menu — '
-        'one from each category — what would each one be? Make the student name all six and explain the category '
-        'it covers. This is the session\'s closing exercise before the practical begins.')
+        'Ask: if you were opening your own bar tomorrow, which categories from the framework would you include '
+        'and which would you leave out — and why? Make the student justify both the inclusions and the omissions '
+        'based on their concept. There is no fixed right answer. The point is that every decision is deliberate. '
+        'This is the session\'s closing exercise before the practical begins.')
 
     add_transition(doc,
         'Theory is done. The numbers are on the table. Now go behind the bar and prove them.')
