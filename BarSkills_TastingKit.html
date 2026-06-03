@@ -22,9 +22,9 @@
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
     .no-print { display: none !important; }
     .sheet { box-shadow: none; margin: 0; }
+    .screen-wrap { padding: 0; gap: 0; }
   }
 
-  /* ── Screen wrapper ── */
   .screen-wrap {
     padding: 24px;
     display: flex;
@@ -32,24 +32,27 @@
     gap: 24px;
   }
 
-  /* ── Sheet ── */
   .sheet {
     width: 10.1in;
+    height: 7.8in;
     background: #fff;
     box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .sheet + .sheet { page-break-before: always; }
 
   /* ── Header ── */
   .header {
+    flex-shrink: 0;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 7px 2px 6px 2px;
+    padding: 6px 2px 5px 2px;
     border-bottom: 1.5px solid #C8A84B;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   .wordmark {
@@ -92,18 +95,22 @@
     white-space: nowrap;
   }
 
-  .underline {
-    border-bottom: 0.75px solid #AAA;
-    height: 13px;
-  }
-
+  .underline { border-bottom: 0.75px solid #AAA; height: 13px; }
   .underline-long  { width: 110px; }
   .underline-short { width: 70px; }
   .underline-med   { width: 95px; }
 
-  /* ── Table ── */
+  /* ── Table fills remaining space ── */
+  .table-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
   table {
     width: 100%;
+    height: 100%;
     border-collapse: collapse;
     table-layout: fixed;
   }
@@ -113,15 +120,14 @@
     padding: 0;
   }
 
-  /* Header row */
+  /* Column header row */
   .col-header th {
     background: #2F2F2F;
     color: #fff;
-    font-family: 'DM Sans', sans-serif;
     font-size: 8.5pt;
     font-weight: 600;
     text-align: center;
-    padding: 4px 2px;
+    padding: 5px 2px;
     letter-spacing: 0.04em;
   }
 
@@ -135,7 +141,7 @@
     color: #888;
   }
 
-  /* Row label */
+  /* Row label cells */
   td.lbl {
     background: #F6F5F0;
     font-size: 6.5pt;
@@ -152,14 +158,12 @@
   td.cell {
     background: #FFFFFF;
     vertical-align: top;
-    padding: 4px 6px;
+    padding: 5px 7px;
   }
 
-  td.cell.alt {
-    background: #FAFAFA;
-  }
+  td.cell.alt { background: #FAFAFA; }
 
-  /* Hint / pre-fill text */
+  /* Hint text */
   td.hint {
     background: #FFFFFF;
     font-size: 6pt;
@@ -167,24 +171,21 @@
     font-style: italic;
     text-align: center;
     vertical-align: middle;
-    padding: 3px 3px;
-    line-height: 1.5;
+    padding: 3px;
+    line-height: 1.6;
   }
 
-  td.hint.alt {
-    background: #FAFAFA;
-  }
+  td.hint.alt { background: #FAFAFA; }
 
   td.rating {
     background: #FAFAFA;
-    font-size: 8pt;
+    font-size: 9pt;
     color: #999;
     text-align: center;
     vertical-align: middle;
-    font-family: 'DM Sans', sans-serif;
   }
 
-  /* ── Screen print banner ── */
+  /* Print banner */
   .print-banner {
     width: 10.1in;
     margin: 0 auto;
@@ -194,24 +195,21 @@
     padding: 9px 14px;
     font-size: 8pt;
     color: #6A5020;
-    font-family: 'DM Sans', sans-serif;
   }
 </style>
 </head>
 <body>
-
 <div class="screen-wrap">
 
 <div class="print-banner no-print">
-  <strong>To print:</strong> File &rarr; Print &rarr; More settings &rarr; enable <em>Background graphics</em> &rarr; Paper: Letter &rarr; Orientation: Landscape &rarr; Margins: None or Minimum
+  <strong>To print:</strong> File &rarr; Print &rarr; More settings &rarr; enable <em>Background graphics</em> &rarr; Paper: Letter &rarr; Orientation: Landscape &rarr; Margins: Minimum &rarr; Scale: Default
 </div>
 
 
-<!-- ═══════════════════════════════════════════════
+<!-- ═══════════════════════════════════════
      4-POSITION SHEET
-     ═══════════════════════════════════════════════ -->
+     ═══════════════════════════════════════ -->
 <div class="sheet">
-
   <div class="header">
     <div class="wordmark">
       BAR·SKILLS
@@ -224,26 +222,27 @@
     </div>
   </div>
 
+  <div class="table-wrap">
   <table>
     <colgroup>
-      <col style="width:1.1in">
-      <col style="width:2.25in">
-      <col style="width:2.25in">
-      <col style="width:2.25in">
-      <col style="width:2.25in">
+      <col style="width:1.05in">
+      <col style="width:2.26in">
+      <col style="width:2.26in">
+      <col style="width:2.26in">
+      <col style="width:2.26in">
     </colgroup>
     <thead>
       <tr class="col-header">
         <th class="lbl">Position</th>
-        <th># 1</th>
-        <th># 2</th>
-        <th># 3</th>
-        <th># 4</th>
+        <th>#&nbsp;1</th>
+        <th>#&nbsp;2</th>
+        <th>#&nbsp;3</th>
+        <th>#&nbsp;4</th>
       </tr>
     </thead>
     <tbody>
 
-      <tr style="height:0.65in">
+      <tr><!-- Spirit -->
         <td class="lbl">Spirit</td>
         <td class="cell"></td>
         <td class="cell"></td>
@@ -251,7 +250,7 @@
         <td class="cell"></td>
       </tr>
 
-      <tr style="height:0.38in">
+      <tr style="height:0.52in"><!-- Distillery -->
         <td class="lbl">Distillery</td>
         <td class="cell alt"></td>
         <td class="cell alt"></td>
@@ -259,7 +258,7 @@
         <td class="cell alt"></td>
       </tr>
 
-      <tr style="height:0.5in">
+      <tr><!-- Appearance -->
         <td class="lbl">Appearance</td>
         <td class="cell"></td>
         <td class="cell"></td>
@@ -267,7 +266,7 @@
         <td class="cell"></td>
       </tr>
 
-      <tr style="height:0.75in">
+      <tr><!-- Nose -->
         <td class="lbl">Nose</td>
         <td class="cell alt"></td>
         <td class="cell alt"></td>
@@ -275,7 +274,7 @@
         <td class="cell alt"></td>
       </tr>
 
-      <tr style="height:0.75in">
+      <tr><!-- Palate -->
         <td class="lbl">Palate</td>
         <td class="cell"></td>
         <td class="cell"></td>
@@ -283,7 +282,7 @@
         <td class="cell"></td>
       </tr>
 
-      <tr style="height:0.5in">
+      <tr><!-- Finish -->
         <td class="lbl">Finish</td>
         <td class="cell alt"></td>
         <td class="cell alt"></td>
@@ -291,15 +290,15 @@
         <td class="cell alt"></td>
       </tr>
 
-      <tr style="height:0.38in">
-        <td class="lbl">Template Fit</td>
-        <td class="hint">Old Fashioned &nbsp;·&nbsp; Sour &nbsp;·&nbsp; Highball &nbsp;·&nbsp; Stirred</td>
-        <td class="hint">Old Fashioned &nbsp;·&nbsp; Sour &nbsp;·&nbsp; Highball &nbsp;·&nbsp; Stirred</td>
-        <td class="hint">Old Fashioned &nbsp;·&nbsp; Sour &nbsp;·&nbsp; Highball &nbsp;·&nbsp; Stirred</td>
-        <td class="hint">Old Fashioned &nbsp;·&nbsp; Sour &nbsp;·&nbsp; Highball &nbsp;·&nbsp; Stirred</td>
+      <tr style="height:0.45in"><!-- Best as -->
+        <td class="lbl">Best as</td>
+        <td class="hint">Neat / Rocks &nbsp;·&nbsp; Sour &nbsp;·&nbsp; Highball &nbsp;·&nbsp; Spirit-Forward</td>
+        <td class="hint">Neat / Rocks &nbsp;·&nbsp; Sour &nbsp;·&nbsp; Highball &nbsp;·&nbsp; Spirit-Forward</td>
+        <td class="hint">Neat / Rocks &nbsp;·&nbsp; Sour &nbsp;·&nbsp; Highball &nbsp;·&nbsp; Spirit-Forward</td>
+        <td class="hint">Neat / Rocks &nbsp;·&nbsp; Sour &nbsp;·&nbsp; Highball &nbsp;·&nbsp; Spirit-Forward</td>
       </tr>
 
-      <tr style="height:0.35in">
+      <tr style="height:0.42in"><!-- Rating -->
         <td class="lbl">Rating</td>
         <td class="rating">___ / 10</td>
         <td class="rating">___ / 10</td>
@@ -307,7 +306,7 @@
         <td class="rating">___ / 10</td>
       </tr>
 
-      <tr style="height:0.6in">
+      <tr><!-- Notes -->
         <td class="lbl">Notes</td>
         <td class="cell alt"></td>
         <td class="cell alt"></td>
@@ -317,14 +316,14 @@
 
     </tbody>
   </table>
-</div><!-- /4-pos sheet -->
+  </div>
+</div><!-- /4-pos -->
 
 
-<!-- ═══════════════════════════════════════════════
+<!-- ═══════════════════════════════════════
      6-POSITION SHEET
-     ═══════════════════════════════════════════════ -->
+     ═══════════════════════════════════════ -->
 <div class="sheet">
-
   <div class="header">
     <div class="wordmark">
       BAR·SKILLS
@@ -337,30 +336,31 @@
     </div>
   </div>
 
+  <div class="table-wrap">
   <table>
     <colgroup>
-      <col style="width:1.1in">
-      <col style="width:1.5in">
-      <col style="width:1.5in">
-      <col style="width:1.5in">
-      <col style="width:1.5in">
-      <col style="width:1.5in">
-      <col style="width:1.5in">
+      <col style="width:1.05in">
+      <col style="width:1.508in">
+      <col style="width:1.508in">
+      <col style="width:1.508in">
+      <col style="width:1.508in">
+      <col style="width:1.508in">
+      <col style="width:1.508in">
     </colgroup>
     <thead>
       <tr class="col-header">
         <th class="lbl">Position</th>
-        <th># 1</th>
-        <th># 2</th>
-        <th># 3</th>
-        <th># 4</th>
-        <th># 5</th>
-        <th># 6</th>
+        <th>#&nbsp;1</th>
+        <th>#&nbsp;2</th>
+        <th>#&nbsp;3</th>
+        <th>#&nbsp;4</th>
+        <th>#&nbsp;5</th>
+        <th>#&nbsp;6</th>
       </tr>
     </thead>
     <tbody>
 
-      <tr style="height:0.6in">
+      <tr><!-- Spirit -->
         <td class="lbl">Spirit</td>
         <td class="cell"></td>
         <td class="cell"></td>
@@ -370,7 +370,7 @@
         <td class="cell"></td>
       </tr>
 
-      <tr style="height:0.35in">
+      <tr style="height:0.52in"><!-- Distillery -->
         <td class="lbl">Distillery</td>
         <td class="cell alt"></td>
         <td class="cell alt"></td>
@@ -380,7 +380,7 @@
         <td class="cell alt"></td>
       </tr>
 
-      <tr style="height:0.45in">
+      <tr><!-- Appearance -->
         <td class="lbl">Appearance</td>
         <td class="cell"></td>
         <td class="cell"></td>
@@ -390,7 +390,7 @@
         <td class="cell"></td>
       </tr>
 
-      <tr style="height:0.72in">
+      <tr><!-- Nose -->
         <td class="lbl">Nose</td>
         <td class="cell alt"></td>
         <td class="cell alt"></td>
@@ -400,7 +400,7 @@
         <td class="cell alt"></td>
       </tr>
 
-      <tr style="height:0.72in">
+      <tr><!-- Palate -->
         <td class="lbl">Palate</td>
         <td class="cell"></td>
         <td class="cell"></td>
@@ -410,7 +410,7 @@
         <td class="cell"></td>
       </tr>
 
-      <tr style="height:0.45in">
+      <tr><!-- Finish -->
         <td class="lbl">Finish</td>
         <td class="cell alt"></td>
         <td class="cell alt"></td>
@@ -420,17 +420,17 @@
         <td class="cell alt"></td>
       </tr>
 
-      <tr style="height:0.38in">
-        <td class="lbl">Template Fit</td>
-        <td class="hint">OF &nbsp;·&nbsp; Sour<br>Highball &nbsp;·&nbsp; Stirred</td>
-        <td class="hint">OF &nbsp;·&nbsp; Sour<br>Highball &nbsp;·&nbsp; Stirred</td>
-        <td class="hint">OF &nbsp;·&nbsp; Sour<br>Highball &nbsp;·&nbsp; Stirred</td>
-        <td class="hint">OF &nbsp;·&nbsp; Sour<br>Highball &nbsp;·&nbsp; Stirred</td>
-        <td class="hint">OF &nbsp;·&nbsp; Sour<br>Highball &nbsp;·&nbsp; Stirred</td>
-        <td class="hint">OF &nbsp;·&nbsp; Sour<br>Highball &nbsp;·&nbsp; Stirred</td>
+      <tr style="height:0.45in"><!-- Best as -->
+        <td class="lbl">Best as</td>
+        <td class="hint">Neat / Rocks<br>Sour · Highball<br>Spirit-Forward</td>
+        <td class="hint">Neat / Rocks<br>Sour · Highball<br>Spirit-Forward</td>
+        <td class="hint">Neat / Rocks<br>Sour · Highball<br>Spirit-Forward</td>
+        <td class="hint">Neat / Rocks<br>Sour · Highball<br>Spirit-Forward</td>
+        <td class="hint">Neat / Rocks<br>Sour · Highball<br>Spirit-Forward</td>
+        <td class="hint">Neat / Rocks<br>Sour · Highball<br>Spirit-Forward</td>
       </tr>
 
-      <tr style="height:0.33in">
+      <tr style="height:0.42in"><!-- Rating -->
         <td class="lbl">Rating</td>
         <td class="rating">__ / 10</td>
         <td class="rating">__ / 10</td>
@@ -440,7 +440,7 @@
         <td class="rating">__ / 10</td>
       </tr>
 
-      <tr style="height:0.55in">
+      <tr><!-- Notes -->
         <td class="lbl">Notes</td>
         <td class="cell alt"></td>
         <td class="cell alt"></td>
@@ -452,7 +452,8 @@
 
     </tbody>
   </table>
-</div><!-- /6-pos sheet -->
+  </div>
+</div><!-- /6-pos -->
 
 </div><!-- /screen-wrap -->
 </body>
