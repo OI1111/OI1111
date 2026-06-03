@@ -68,6 +68,22 @@ The fifth PDF (LCBO Bottle Buying Guide) doubles as the lead magnet, SEO article
 | The Highball | Spirit + bubbles | Gin and Tonic, Tom Collins, Mojito-style |
 | Stirred / Spirit-Forward | Spirit + vermouth (+ bitters) | Manhattan, Martini, Negroni-style |
 
+## Full Product Ladder
+
+| Product | Price | Format | Status |
+|---------|-------|--------|--------|
+| LCBO Bottle Buying Guide | Free | PDF lead magnet | To build |
+| Home Bar System | $89 CAD standard / $79 founding / $49 presale | Self-paced online, ~2-3 hrs + 5 PDFs | To film |
+| N/A Cocktails at Home | ~$129 CAD (TBD) | Self-paced online | Future |
+| Craft Bartender Course Online | $597 CAD launch / $697 CAD standard | Self-paced online, 9 sessions | Future (film after Home Bar) |
+| Craft Bartender Course Live 1:1 | $1,800 CAD (9 sessions) | Private in-person | Active |
+| Private events Option A | $950 CAD | Cocktail masterclass only | Active |
+| Private events Option B | $1,200+ CAD | Full afternoon, cocktails + wine | Active |
+| B2B restaurant training | $450 CAD per 2-hour session | In-person B2B | Outreach phase |
+| Kingston Pour Series (seasonal) | $32 CAD per kit | Physical product, limited batch | Pre-Christmas launch |
+
+**Pricing rationale for Craft Bartender Course Online:** In-person friend rate is $150/session x 9 = $1,350 CAD. Market rate is $200-250/session = $1,800-2,250 CAD. Online self-paced at $597 CAD is 33% of commercial live rate, which is standard for coached-to-self-paced conversion. All comparable premium online programs (A Bar Above, Cocktail Camp, BAR 5-Day) are US-based, do not have a WSET L3 instructor, and are not LCBO-accurate. Bar-Skills has no direct competitor in the Canadian market at this price point with these credentials.
+
 ## Revenue Streams and Pricing
 
 | Stream | Unit price | Monthly target (at $5k/month) |
@@ -76,7 +92,7 @@ The fifth PDF (LCBO Bottle Buying Guide) doubles as the lead magnet, SEO article
 | Private events (Option A) | $950 CAD | 2 events = $1,900 |
 | Private events (Option B) | $1,200+ CAD | tracked separately |
 | B2B restaurant training | $450 CAD per 2-hour session | 2 sessions = $900 |
-| Craft Bartender Course | $1,800 CAD per student (9 sessions) | 1-2 students |
+| Craft Bartender Course Live | $1,800 CAD per student (9 sessions) | 1-2 students |
 
 ## The $5,000/Month Revenue Plan
 
@@ -183,8 +199,12 @@ Sessions S01-S08 were built manually as Word documents stored in Google Drive. T
 
 - **Geography:** Kingston, Ontario; also serves Prince Edward County and Eastern Ontario
 - **Credentials:** WSET Level 3, 20+ years hospitality, National Bartending Competition Finalist (Top 3)
-- **B2B outreach:** tracked in `BarSkills_OutreachCampaign_v1` (Google Sheets). 10 leads, all uncontacted as of June 3, 2026. Outreach starts Week 1.
-- **Private events:** Option A (cocktails only, $950 CAD) / Option B (full afternoon with wine service, $1,200+ CAD). Client provides glassware and alcohol, Bar-Skills brings everything else. July 18 event confirmed (Kevin's 65th, Colleen Knapp, Option B, deposit received).
-- **Local distillery partnerships:** KL Craft replied positively. Stillus meeting arranged. Bare Bones, Wild Lot, Kinsip contacted. These partnerships are for course features and cross-promotion.
-- **Social media:** Instagram, Facebook, LinkedIn. Managed via Buffer. Content calendar runs through June 14, 2026.
-- **Confirmed revenue booked:** July 18 private event (Option B).
+- **Current student:** RJ is the active Craft Bartender Course student. Sessions are 90 min, Oleks charges $150/session at friend rate (Oleks has historically provided alcohol as a discount; going forward students purchase their own). S09 (Menu Engineering) is the final session requested.
+- **Grand Theater:** Oleks works as a bartender at the Grand Theater in Kingston. The theater closes for summer in approximately mid-June 2026 and reopens in October. October represents a return to regular income and a natural audience for Bar-Skills promotion within Kingston's arts community.
+- **B2B outreach:** tracked in `BarSkills_OutreachCampaign_v1` (Google Sheets). 10 restaurant leads, all uncontacted as of June 3, 2026. Note: prior outreach was to distilleries and wineries (different audience), not restaurants. Claramount Club/Harbourfront Hospitality gave a soft rejection ("will be in contact if we feel the need"). Outreach starts Week 1.
+- **Private events:** Option A (cocktails only, $950 CAD) / Option B (full afternoon with wine service, $1,200+ CAD). Client provides glassware and alcohol, Bar-Skills brings everything else. July 18 event confirmed (Kevin's 65th birthday, Colleen Knapp, Option B, deposit received, 12 guests, Margarita masterclass + wine service).
+- **Local distillery partnerships:** KL Craft (Laura) replied positively. Stillus meeting arranged (~June 4, 1PM). Bare Bones, Wild Lot, Kinsip contacted. These partnerships are for course features and cross-promotion, not revenue.
+- **Social media:** Instagram (@bar.skills, 675 followers), Facebook, LinkedIn. Managed via Buffer. Make.com automation pipeline built (RSS to AI captions to Google Sheets to Buffer). Content calendar runs through June 14, 2026. 7 Facebook group post templates written and ready to deploy. Wine Thursday series runs on Instagram.
+- **Kingston Pour Series:** Seasonal physical product. Mason jar with hand-infused citrus and spices. Add wine, get mulled wine. Previously tested at $15 (too low, never launched properly). Official price: $32 CAD. Launch timing: October/November 2026 pre-Christmas. First unit: gift to Kevin (Colleen's husband) at July 18 birthday event as a Bar-Skills brand introduction. Presentation: branded label, Bar-Skills card with instructions and URL. Limited batch (24-36 units). Sell via Lemon Squeezy with local pickup option.
+- **Confirmed revenue booked:** July 18 private event (Option B, deposit received).
+- **Income situation:** Grand Theater closes mid-June. EI active. Job applications pending. October theater reopening restores base income.
