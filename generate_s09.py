@@ -320,9 +320,9 @@ def build_sb():
         'Industry targets: Cocktails 18–22%  |  Beer 22–28%  |  Wine 28–35%\n'
         'Session standard: 2oz alcohol per cocktail, 1oz for a single spirit, 6oz wine glass.')
     add_body(doc,
-        'Example: Classic Cosmopolitan ingredients cost $2.10. Selling price $15. '
-        'Pour cost = (2.10 ÷ 15) × 100 = 14%. This is within target — and leaves room to improve margin with '
-        'strategic modifications, which you will see in Build 04.')
+        'Example: Classic Cosmopolitan (updated recipe with LCBO pricing). Ingredients cost $2.93. Selling price $15. '
+        'Pour cost = (2.93 ÷ 15) × 100 = 19.5%. This is within target — and confirms that deliberate modifications '
+        'can improve both the guest experience and the margin, as you will see in Build 04.')
 
     add_body(doc, 'WINE BY THE GLASS (BTG) LOGIC', bold=True)
     add_body(doc,
@@ -365,7 +365,7 @@ def build_sb():
         'to build. If the build takes longer than 3 minutes for a $15 drink, someone has not done the labour maths.', bg='FFF8DC')
 
     add_reflect(doc, [
-        'A cocktail costs $2.80 in ingredients and sells for $16. Calculate the pour cost percentage. Is it within target?',
+        'A cocktail costs $3.74 in ingredients and sells for $17. Calculate the pour cost percentage. Is it within target?',
         'A wine bottle is $52 on the menu. The 6oz glass is $13. Using the BTG rule, is this correctly priced? What would you adjust?',
     ])
 
@@ -695,11 +695,11 @@ def build_sb():
     add_two_col_table(doc,
         ['COST ELEMENT', 'AMOUNT', 'CALCULATION'],
         [
-            ['Vodka (house) 2oz', '$1.00/oz', '$2.00'],
-            ['Coffee Liqueur 1oz', '$0.80/oz', '$0.80'],
-            ['Total ingredient cost', '', '$2.80'],
-            ['Selling price', '', '$14'],
-            ['Pour cost %', '(2.80 ÷ 14) × 100', '20%  ✓ On target'],
+            ['Vodka (house) 2oz', '$1.22/oz (LCBO)', '$2.44'],
+            ['Coffee Liqueur 1oz', '$1.30/oz (LCBO)', '$1.30'],
+            ['Total ingredient cost', '', '$3.74'],
+            ['Selling price', '', '$17'],
+            ['Pour cost %', '(3.74 ÷ 17) × 100', '22%  ✓ At target'],
         ]
     )
 
@@ -732,11 +732,11 @@ def build_sb():
     add_two_col_table(doc,
         ['COST ELEMENT', 'AMOUNT', 'CALCULATION'],
         [
-            ['Vodka + Coffee Liqueur', '', '$2.80 (same as Build 01)'],
+            ['Vodka + Coffee Liqueur', '', '$3.74 (same as Build 01)'],
             ['Heavy Cream 1oz', '$0.25/oz', '$0.25'],
-            ['Total ingredient cost', '', '$3.05'],
-            ['Selling price', '', '$15'],
-            ['Pour cost %', '(3.05 ÷ 15) × 100', '20.3%  ✓ On target'],
+            ['Total ingredient cost', '', '$3.99'],
+            ['Selling price', '', '$18'],
+            ['Pour cost %', '(3.99 ÷ 18) × 100', '22.2%  ✓ At target'],
             ['Additional cost vs Build 01', '', '$0.25'],
             ['Additional price vs Build 01', '', '$1.00'],
             ['Additional profit per drink', '', '$0.75'],
@@ -763,40 +763,42 @@ def build_sb():
         ['INGREDIENT', 'AMOUNT', 'NOTES'],
         [
             ['Vodka (house)', '1.5oz / 45ml', 'Citrus-neutral. Do not use flavoured vodka here.'],
-            ['Triple Sec', '0.5oz / 15ml', 'Cointreau preferred. Adjust price accordingly if used.'],
-            ['Fresh Lime Juice', '0.5oz / 15ml', 'Squeeze to order. Not bottled.'],
-            ['Cranberry Juice', '0.5oz / 15ml', 'Just enough for colour. Not a dominant flavour.'],
+            ['Triple Sec', '0.5oz / 15ml', 'Meaghers or similar. Cointreau upgrade reserved for Build 04.'],
+            ['Simple Syrup', '0.25oz / 7ml', 'House-made or commercial. Balances the citrus.'],
+            ['Fresh Lime Juice', '1oz / 30ml', 'Squeeze to order. Not bottled. Approximately one lime.'],
+            ['Cranberry Juice', '1oz / 30ml', 'For colour and flavour balance.'],
         ]
     )
 
-    add_body(doc, 'Glass: Chilled coupe  |  Ice: None (strained)  |  Method: Shake, double strain  |  Garnish: Expressed lemon twist')
+    add_body(doc, 'Glass: Chilled coupe  |  Ice: None (strained)  |  Method: Shake, double strain  |  Garnish: Fresh lime twist')
     add_body(doc,
         'Build order: Add all ingredients to a shaker with ice. Shake hard for 12–15 seconds. '
-        'Double-strain into a pre-chilled coupe. Express a lemon twist over the glass surface and place on the rim.')
+        'Double-strain into a pre-chilled coupe. Express a lime twist over the glass surface and place on the rim.')
 
     add_two_col_table(doc,
         ['COST ELEMENT', 'AMOUNT', 'CALCULATION'],
         [
-            ['Vodka 1.5oz', '$1.00/oz', '$1.50'],
-            ['Triple Sec 0.5oz', '$0.80/oz', '$0.40'],
-            ['Fresh Lime Juice 0.5oz', 'est.', '$0.15'],
-            ['Cranberry Juice 0.5oz', 'est.', '$0.05'],
-            ['Total ingredient cost', '', '$2.10'],
+            ['Vodka 1.5oz', '$1.22/oz (LCBO)', '$1.83'],
+            ['Triple Sec 0.5oz', '$1.10/oz (LCBO)', '$0.55'],
+            ['Simple Syrup 0.25oz', 'est.', '$0.05'],
+            ['Fresh Lime Juice 1oz', 'est.', '$0.40'],
+            ['Cranberry Juice 1oz', 'est.', '$0.10'],
+            ['Total ingredient cost', '', '$2.93'],
             ['Selling price (Cannery)', '', '$15'],
-            ['Pour cost %', '(2.10 ÷ 15) × 100', '14%  — Well below target'],
+            ['Pour cost %', '(2.93 ÷ 15) × 100', '19.5%  ✓ Within target'],
         ]
     )
 
     add_box_block(doc, 'MATRIX CLASSIFICATION',
-        'Pour cost 14% — excellent. But this drink is listed in the "Cannery Signature" section between generic classics '
-        'with no visual callout and a generic ingredient-list description. High margin, low visibility = PUZZLE. '
+        'Pour cost 19.5% — within target. But this drink is listed in the "Cannery Signature" section between generic classics '
+        'with no visual callout and a generic ingredient-list description. Good margin, low visibility = PUZZLE. '
         'The recipe is not the problem. The engineering around it is.')
 
     # ── Build 04: Elevated Cosmopolitan ─────────────────────────────────
     add_build_header(doc, 4, 'Elevated Cosmopolitan')
     add_body(doc,
         'The same drink. Three modifications. A different menu position, a different description, and a selling '
-        'price of $19. The ingredient cost increase is $0.42. The profit increase per drink is $3.58. '
+        'price of $19. The ingredient cost increase is $0.20. The profit increase per drink is $3.80. '
         'This is why menus are designed — not assembled.')
 
     add_body(doc, 'PRE-PREPARATION NOTE', bold=True)
@@ -809,10 +811,11 @@ def build_sb():
     add_two_col_table(doc,
         ['INGREDIENT', 'AMOUNT', 'NOTES'],
         [
-            ['Lemon Peel Infused Vodka', '1.5oz / 45ml', 'Prepared 24–48h prior. Same base cost.'],
+            ['Lemon Peel Infused Vodka', '1.5oz / 45ml', 'Prepared 24–48h prior. Same base cost as house vodka.'],
             ['Cointreau', '0.5oz / 15ml', 'Do not substitute Triple Sec for this build.'],
-            ['Fresh Lemon Juice', '0.5oz / 15ml', 'Squeezed from the infusion lemons. Byproduct — near zero cost.'],
-            ['White Cranberry Juice', '0.5oz / 15ml', 'Lighter colour. More refined visual than standard cranberry.'],
+            ['Simple Syrup', '0.25oz / 7ml', 'Same as Classic.'],
+            ['Fresh Lemon Juice', '1oz / 30ml', 'Squeezed from the infusion lemons. Byproduct — near zero cost.'],
+            ['White Cranberry Juice', '1oz / 30ml', 'Lighter colour. More refined visual than standard cranberry.'],
             ['Orange Bitters', '2 dashes or spray', 'Dash into shaker OR atomize 2 sprays inside the chilled coupe before straining.'],
             ['Dehydrated Citrus Wheel', '1 piece', 'Lime, lemon, or orange. Prepared in advance. Lasts weeks.'],
             ['Expressed Orange Peel', '1 strip', 'Express oils over finished drink. Do not drop in — place on rim.'],
@@ -839,16 +842,17 @@ def build_sb():
     add_two_col_table(doc,
         ['VERSION', 'INGREDIENT COST', 'SELLING PRICE', 'POUR COST %', 'ADDITIONAL PROFIT'],
         [
-            ['Classic Cosmopolitan', '$2.10', '$15', '14.0%', 'Baseline'],
-            ['+ Infused Vodka only', '$2.10', '$17', '12.4%', '+$1.90 / drink'],
-            ['+ Cointreau upgrade', '$2.45', '$18', '13.6%', '+$2.55 / drink'],
-            ['All 3 modifications', '$2.52', '$19', '13.3%', '+$3.58 / drink'],
+            ['Classic Cosmopolitan', '$2.93', '$15', '19.5%', 'Baseline'],
+            ['+ Infused Vodka only*', '$2.58', '$16', '16.1%', '+$1.35 / drink'],
+            ['+ Cointreau upgrade', '$2.86', '$18', '15.9%', '+$3.07 / drink'],
+            ['All 3 modifications', '$3.13', '$19', '16.5%', '+$3.80 / drink'],
         ]
     )
+    add_body(doc, '* Infused vodka uses lemon juice squeezed from the infusion peels — byproduct cost near zero — replacing fresh lime.', italic=True)
 
     add_box_block(doc, 'THE LESSON',
-        'Cost increase: $0.42. Price increase: $4.00. Additional profit per drink: $3.58. Pour cost improved from '
-        '14% to 13.3%. Every modification contributed to the guest experience — aroma, visual, flavour depth. '
+        'Cost increase: $0.20. Price increase: $4.00. Additional profit per drink: $3.80. Pour cost improved from '
+        '19.5% to 16.5%. Every modification contributed to the guest experience — aroma, visual, flavour depth. '
         'None of them were decoration. That is cocktail engineering.')
 
     # ── Menu Analysis Exercise ───────────────────────────────────────────
@@ -878,7 +882,7 @@ def build_sb():
         'A wine bottle is $48 on the menu. The 6oz glass is $11. Is this correctly priced? What would you change?',
         'Name the four cells of the menu engineering matrix and the primary action for each.',
         'What does FIFO stand for? Where does it matter most in a bar operation?',
-        'The Elevated Cosmopolitan costs $0.42 more to make than the Classic and sells for $4.00 more. What is the additional profit per drink?',
+        'The Elevated Cosmopolitan costs $0.20 more to make than the Classic and sells for $4.00 more. What is the additional profit per drink?',
     ]
     for i, q in enumerate(test_qs, 1):
         p = doc.add_paragraph(f'{i}.  {q}', style='List Number')
@@ -1097,10 +1101,10 @@ def build_tm():
 
     add_heading(doc, 'WHAT TO SHOW', level=3)
     add_body(doc,
-        'Work through the Classic Cosmopolitan calculation live. Write it out: $2.10 cost ÷ $15 price × 100 = 14%. '
+        'Work through the Classic Cosmopolitan calculation live. Write it out: $2.93 cost ÷ $15 price × 100 = 19.5%. '
         'Ask: is this good? Then ask: what if it takes 6 minutes to make because the bar has to squeeze fresh juice '
-        'to order during service? What does the pour cost look like then? (Answer: still 14%, but the labour cost '
-        'on 6 minutes of bartender time may cost the bar more than the 4 points of pour cost they saved.)')
+        'to order during service? What does the pour cost look like then? (Answer: still 19.5%, but the labour cost '
+        'on 6 minutes of bartender time may cost the bar more than any margin advantage.)')
     add_body(doc,
         'Show the Sultan\'s Tent Moroccan Mojito: $16 selling price, two spirits (Bacardi White + Bacardi Black). '
         'At 1oz each: two spirit pours at ~$0.80–$1.00 per oz = $1.60–$2.00 in spirits alone plus juice, syrup, '
@@ -1447,7 +1451,7 @@ def build_tm():
     add_heading(doc, 'Build 01 — Black Russian (10 min)', level=2)
     add_body(doc,
         'The teaching point is efficiency. Two ingredients, no shaking, no straining. Walk through the cost calculation '
-        'live as the student builds: $2.80 total cost ÷ $14 selling price × 100 = 20%. On target. Ask: is this a '
+        'live as the student builds: $3.74 total cost ÷ $17 selling price × 100 = 22%. At target. Ask: is this a '
         'Star, Plowhorse, Puzzle, or Dog? Answer depends on sales volume — but pour cost says it could be a Star. '
         'Instruct the student to straw-taste and call the balance before presenting.')
 
@@ -1458,7 +1462,7 @@ def build_tm():
             ['Ice', 'Glass properly iced before pouring.'],
             ['Stir', '3–4 slow rotations. Not a shake.'],
             ['Straw-taste', 'Called before presenting.'],
-            ['Cost calculation', 'Student states $2.80 cost, $14 price, 20% pour cost.'],
+            ['Cost calculation', 'Student states $3.74 cost, $17 price, 22% pour cost.'],
         ]
     )
 
@@ -1490,19 +1494,19 @@ def build_tm():
         '"Cannery Signature" between a Mojito and a Paloma with a simple ingredient list. No callout. No story. '
         'That is the problem this build diagnoses.')
     add_body(doc,
-        'Build the drink to full spec. Calculate the cost live: $2.10 ÷ $15 = 14%. Ask: is this a Star or a Puzzle? '
-        'Answer: excellent pour cost, but the menu positioning makes it a Puzzle. The recipe is not the problem — '
+        'Build the drink to full spec. Calculate the cost live: $2.93 ÷ $15 = 19.5%. Ask: is this a Star or a Puzzle? '
+        'Answer: pour cost within target, but the menu positioning makes it a Puzzle. The recipe is not the problem — '
         'the engineering around it is. That is the setup for Build 04.')
 
     add_two_col_table(doc,
         ['EVALUATION POINT', 'STANDARD'],
         [
-            ['Measurement', '1.5oz vodka + 0.5oz Triple Sec + 0.5oz lime + 0.5oz cranberry. 2oz total alcohol.'],
+            ['Measurement', '1.5oz vodka + 0.5oz Triple Sec + 0.25oz simple syrup + 1oz lime + 1oz cranberry. 2oz total alcohol.'],
             ['Shake', '12–15 seconds. Hard shake. Fully chilled.'],
             ['Double strain', 'Fine mesh + Hawthorne strainer. No ice chips.'],
             ['Coupe', 'Pre-chilled. Wash line clean.'],
-            ['Garnish', 'Expressed lemon twist. Pinched over glass, oil visible on surface, placed on rim.'],
-            ['Matrix call', 'Student classifies and justifies: Puzzle. High margin, poor positioning.'],
+            ['Garnish', 'Fresh lime twist. Pinched over glass, citrus oil visible on surface, placed on rim.'],
+            ['Matrix call', 'Student classifies and justifies: Puzzle. Pour cost within target, poor positioning.'],
         ]
     )
 
@@ -1530,8 +1534,8 @@ def build_tm():
         'experience before the guest tastes anything.')
     add_body(doc,
         'Now build the full elevated version. Walk through the cost comparison table. State the numbers out loud: '
-        '$2.10 becomes $2.52. $15 becomes $19. Pour cost goes from 14% to 13.3%. Profit per drink increases by '
-        '$3.58. The modifications did not just improve the guest experience — they improved the margin.')
+        '$2.93 becomes $3.13. $15 becomes $19. Pour cost goes from 19.5% to 16.5%. Profit per drink increases by '
+        '$3.80. The modifications did not just improve the guest experience — they improved the margin.')
 
     add_two_col_table(doc,
         ['EVALUATION POINT', 'STANDARD'],
@@ -1560,7 +1564,7 @@ def build_tm():
             ['Wine bottle $48, glass $11. Correctly priced?', '$11 × 4 = $44. Under-priced by glass. Raise BTG to $12–13 or lower bottle to $44.'],
             ['Four matrix cells', 'Star (high/high), Plowhorse (low/high), Puzzle (high/low), Dog (low/low). One action for each.'],
             ['FIFO — where most critical?', 'First In, First Out. Most critical for fresh juice (24h), syrups, open wine (72h refrigerated).'],
-            ['Additional profit — Elevated Cosmo', '$19 − $2.52 = $16.48 profit vs $15 − $2.10 = $12.90. Additional profit = $3.58 per drink.'],
+            ['Additional profit — Elevated Cosmo', '$19 − $3.13 = $15.87 profit vs $15 − $2.93 = $12.07. Additional profit = $3.80 per drink.'],
         ]
     )
 
